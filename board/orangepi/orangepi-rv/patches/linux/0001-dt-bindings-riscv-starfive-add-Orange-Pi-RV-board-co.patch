@@ -1,0 +1,30 @@
+From 4aed8a62e43a841d086bb79759d5706fd75fc084 Mon Sep 17 00:00:00 2001
+From: Icenowy Zheng <uwu@icenowy.me>
+Date: Sun, 28 Sep 2025 17:36:56 +0300
+Subject: [PATCH 1/2] dt-bindings: riscv: starfive: add Orange Pi RV board
+ compatible
+
+Orange Pi RV is a newly released JH7110 board by Xunlong.
+
+Add a compatible string to the starfive platform DT binding.
+
+Signed-off-by: Icenowy Zheng <uwu@icenowy.me>
+---
+ Documentation/devicetree/bindings/riscv/starfive.yaml | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/Documentation/devicetree/bindings/riscv/starfive.yaml b/Documentation/devicetree/bindings/riscv/starfive.yaml
+index 7ef85174353d..dd5cd51e3879 100644
+--- a/Documentation/devicetree/bindings/riscv/starfive.yaml
++++ b/Documentation/devicetree/bindings/riscv/starfive.yaml
+@@ -31,6 +31,7 @@ properties:
+               - pine64,star64
+               - starfive,visionfive-2-v1.2a
+               - starfive,visionfive-2-v1.3b
++              - xunlong,orangepi-rv
+           - const: starfive,jh7110
+ 
+ additionalProperties: true
+-- 
+2.51.0
+
